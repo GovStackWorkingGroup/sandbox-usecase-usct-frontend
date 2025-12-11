@@ -27,7 +27,7 @@ export default function DIAL() {
   const { data: sdgs } = useQuery(
     "sdgs",
     async () => {
-      const req = await fetch("https://exchange.dial.global/api/v1/sdgs");
+      const req = await fetch("https://simulation.govstack.global/data/sdgs.json");
       const res = await req.json();
       return res;
     },
@@ -36,7 +36,7 @@ export default function DIAL() {
   const { data: workflows } = useQuery(
     "workflows",
     async () => {
-      const req = await fetch("https://exchange.dial.global/api/v1/workflows");
+      const req = await fetch("https://simulation.govstack.global/data/workflows.json");
       const res = await req.json();
       return res;
     },
