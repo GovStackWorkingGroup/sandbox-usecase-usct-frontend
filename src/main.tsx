@@ -38,6 +38,8 @@ const queryClient = new QueryClient();
 // on (re)load, check signed-id status
 sessionStorage.removeItem("user");
 
+console.log("Previous docker image is 73149fd33247484fe54a079e9c58acc2cb22fbcf");
+
 fetch(`/api/v1/roles`, {
 credentials: "include" ,
 signal: AbortSignal.timeout(5000)})
