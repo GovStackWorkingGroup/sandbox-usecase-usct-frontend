@@ -35,5 +35,5 @@ jobs:
           context: .
           push: true
           tags: |
-            tags: ghcr.io/${{ github.repository_owner }}/sandbox-usecase-usct-frontend:latest
-            ghcr.io/${{ github.repository }}:${{ github.sha }}
+            ghcr.io/govstackworkinggroup/sandbox-usecase-usct-frontend:latest
+            ghcr.io/govstackworkinggroup/sandbox-usecase-usct-frontend:${{ github.sha }}
